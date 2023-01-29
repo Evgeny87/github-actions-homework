@@ -23,7 +23,7 @@ class UserProfile(models.Model):
 
 
 @receiver(post_save, sender=UserModel)
-def user_saved_handler(instance: UserModel, created: bool):
+def user_saved_handler(instance: UserModel, created: bool, **kwargs):
     if not created:
         return
 
