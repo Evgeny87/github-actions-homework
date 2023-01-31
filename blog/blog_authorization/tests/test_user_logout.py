@@ -23,7 +23,7 @@ class UserLogoutTest(TestCase):
             }
         )
 
-        response = self.client.get(reverse("blog_django_app:users"))
+        response = self.client.get(reverse("blog_django_posts:users"))
         self.assertFalse(response.context["user"].is_anonymous)
 
         response = self.client.get(
@@ -31,7 +31,7 @@ class UserLogoutTest(TestCase):
         )
 
         self.assertEqual(response.status_code, 302)
-        self.assertURLEqual(response.url, reverse("blog_django_app:users"))
+        self.assertURLEqual(response.url, reverse("blog_django_posts:users"))
 
-        response = self.client.get(reverse("blog_django_app:users"))
+        response = self.client.get(reverse("blog_django_posts:users"))
         self.assertTrue(response.context["user"].is_anonymous)
