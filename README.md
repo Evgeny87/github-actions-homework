@@ -5,4 +5,4 @@
 #### Критерии оценки:
 - создан GitHub Action с выполнением тестов
 
-[![codecov](https://codecov.io/gh/Evgeny87/github-actions-homework/branch/master/graph/badge.svg)](https://codecov.io/gh/Evgeny87/github-actions-homework)
+[![codecov](https://codecov.io/gh/Evgeny87/github-actions-homework/branch/homework_10/graph/badge.svg)](https://codecov.io/gh/Evgeny87/github-actions-homework)
