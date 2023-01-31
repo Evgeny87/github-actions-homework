@@ -4,3 +4,5 @@
 - БОНУС: применить какой-либо открытый ресурс для тестирования и проверки покрытия: Travis, codecov, coveralls и тд
 #### Критерии оценки:
 - создан GitHub Action с выполнением тестов
+
+[![codecov](https://codecov.io/gh/Evgeny87/github-actions-homework/branch/master/graph/badge.svg)](https://codecov.io/gh/Evgeny87/github-actions-homework)
