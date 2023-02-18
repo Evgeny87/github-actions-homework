@@ -1,6 +1,6 @@
 [
   {
-    "model": "blog_django_app.post",
+    "model": "blog_django_posts.post",
     "pk": 2,
     "fields": {
       "title": "Cool title",
@@ -9,7 +9,7 @@
     }
   },
   {
-    "model": "blog_django_app.post",
+    "model": "blog_django_posts.post",
     "pk": 3,
     "fields": {
       "title": "2",

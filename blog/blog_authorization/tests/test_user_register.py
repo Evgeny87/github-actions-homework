@@ -28,7 +28,7 @@ class UserRegisterTest(TestCase):
             data=self.user_data,
         )
         self.assertEqual(302, response.status_code)
-        self.assertURLEqual(response.url, reverse('blog_django_app:users'))
+        self.assertURLEqual(response.url, reverse('blog_django_posts:users'))
 
         user = UserModel.objects.get(username=self.user_data["username"])
         self.assertTrue(user)

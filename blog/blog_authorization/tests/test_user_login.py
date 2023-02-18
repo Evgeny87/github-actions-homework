@@ -25,7 +25,7 @@ class UserLoginTest(TestCase):
         )
 
         self.assertEqual(response.status_code, 302)
-        self.assertURLEqual(response.url, reverse("blog_django_app:users"))
+        self.assertURLEqual(response.url, reverse("blog_django_posts:users"))
 
     def test_user_login_unsuccessful(self):
         response = self.client.post(

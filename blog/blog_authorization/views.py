@@ -12,15 +12,15 @@ from .models import UserModel
 # Create your views here.
 class UserCreationView(CreateView):
     model = UserModel
-    success_url = reverse_lazy("blog_django_app:users")
+    success_url = reverse_lazy("blog_django_posts:users")
     form_class = UserCreationForm
     template_name = "blog_authorization/register.html"
 
 
 class LoginView(LoginViewGeneric):
-    next_page = reverse_lazy("blog_django_app:users")
+    next_page = reverse_lazy("blog_django_posts:users")
     template_name = "blog_authorization/login.html"
 
 
 class LogoutView(LogoutViewGeneric):
-    next_page = reverse_lazy("blog_django_app:users")
+    next_page = reverse_lazy("blog_django_posts:users")
